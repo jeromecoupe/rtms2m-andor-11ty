@@ -167,8 +167,15 @@
         <div class="wrapper">
           <h2 class="visually-hidden">Introduction</h2>
 
-          {% for item in characters %}
-            <p>{{ item.name }}</p>
+          {% for item in collections.characters %}
+            <article>
+
+              <h2>{{ item.data.name }} {{ item.data.surname }}</h2>
+              <p>{{ item.data.actor }}</p>
+              <p><a href="{{ item.data.link }}">Wiki link</a></p>
+              <p><a href="{{ item.url }}">Details</a></p>
+
+            </article>
           {% endfor %}
 
           <div class="intro">
