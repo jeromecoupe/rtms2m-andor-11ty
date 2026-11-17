@@ -1,0 +1,81 @@
+/* ======================================
+=character
+====================================== */
+
+.character {
+  margin-block-end: 1em;
+}
+
+.character-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.character-media {
+  position: relative;
+  overflow: clip;
+  margin-block-end: 18px;
+  border-radius: var(--radius-base);
+}
+
+.character-media::before {
+  --iconsize: 42px;
+
+  position: absolute;
+  inset-block-end: 18px;
+  inset-inline-end: 18px;
+  pointer-events: none;
+
+  content: "";
+  inline-size: var(--iconsize);
+  block-size: var(--iconsize);
+  background: var(--color-accent-main) url(../../img/icon-more.svg) 50% 50%
+    no-repeat;
+  border-radius: var(--radius-base);
+
+  z-index: 1;
+
+  opacity: 0;
+  translate: 0 100%;
+
+  transition:
+    opacity 0.2s ease-out,
+    translate 0.2s ease-out;
+}
+
+a:hover .character-media::before,
+a:focus .character-media::before {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.character-img {
+  scale: 1;
+  transition: scale 0.2s ease-out;
+
+  a:hover & {
+    scale: 1.012;
+  }
+}
+
+.character-name {
+  font-weight: 500;
+  font-family: var(--fontstack-alt);
+  font-size: var(--fontsize-title4);
+  line-height: 1.2;
+  color: var(--color-accent-dark);
+  margin-block-end: 0;
+}
+
+a:hover .character-name {
+  text-decoration: underline;
+  text-decoration-color: color-mix(var(--color-accent-main), transparent 30%);
+  text-underline-offset: 0.24ch;
+  text-decoration-thickness: 1px;
+}
+
+.character-cast {
+  color: var(--color-txt-secondary);
+  margin-block-end: 0;
+}

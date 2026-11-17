@@ -1,0 +1,9 @@
+/* ======================================
+=copyright
+====================================== */
+
+.copyright {
+  margin: 0;
+  color: var(--color-txt-secondary);
+  font-size: var(--fontsize-sm);
+}

@@ -1,0 +1,40 @@
+/* ======================================
+=button
+====================================== */
+
+.watchbutton {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 18px;
+
+  padding: 18px 42px;
+  background-color: var(--color-accent-main);
+
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: calc(14 / 16 * 1rem);
+  line-height: 1;
+  font-family: var(--fontstack-alt);
+  font-stretch: 125%;
+
+  translate: 0 50%;
+
+  transition: background-color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent-dark);
+  }
+}
+
+.watchbutton-icon {
+  transition: translate 0.2s ease-out;
+
+  a:hover &,
+  a:focus & {
+    translate: 2px 0;
+  }
+}

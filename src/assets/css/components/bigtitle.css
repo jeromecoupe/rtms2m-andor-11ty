@@ -1,0 +1,28 @@
+/* ======================================
+=bigtitle
+====================================== */
+
+.bigtitle {
+  --bigtitle-fontsize: clamp(
+    25 / 16 * 1rem,
+    0.138rem + 6.514vi,
+    96 / 16 * 1rem
+  );
+
+  margin-block-end: 0.5em;
+  line-height: 1.08;
+  font-size: var(--bigtitle-fontsize);
+  font-family: var(--fontstack-alt);
+  text-transform: uppercase;
+  color: var(--color-accent-main);
+  font-weight: 200;
+  font-stretch: 125%;
+}
+
+.bigtitle > span {
+  display: block;
+}
+
+.bigtitle-fat {
+  font-weight: 800;
+}

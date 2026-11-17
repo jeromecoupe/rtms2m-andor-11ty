@@ -1,0 +1,8 @@
+/* ======================================
+=footer
+====================================== */
+
+.sitefooter {
+  padding-block: 18px;
+  border-block-start: 1px solid rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,30 @@
+/* ======================================
+=colors
+====================================== */
+
+:root {
+  --color-neutral-100: hsl(0, 2%, 10%);
+  --color-neutral-200: hsl(0, 2%, 20%);
+  --color-neutral-300: hsl(0, 2%, 30%);
+  --color-neutral-400: hsl(0, 2%, 40%);
+  --color-neutral-500: hsl(0, 2%, 70%);
+  --color-neutral-600: hsl(0, 2%, 80%);
+  --color-neutral-700: hsl(0, 2%, 90%);
+  --color-neutral-800: hsl(0, 2%, 95%);
+
+  --color-orange-main: oklch(73% 0.13 57);
+  --color-orange-dark: oklch(55% 0.13 57);
+  --color-orange-light: oklch(84% 0.13 57);
+  --color-orange-neutral: oklch(97% 0.003 57);
+
+  --color-txt-primary: var(--color-neutral-100);
+  --color-txt-secondary: var(--color-neutral-400);
+
+  --color-bkg-primary: var(--color-orange-neutral);
+
+  --color-accent-main: var(--color-orange-main);
+  --color-accent-dark: var(--color-orange-dark);
+  --color-accent-light: var(--color-orange-light);
+
+  --color-border-primary: color-mix(var(--color-txt-primary), transparent 82%);
+}

@@ -1,0 +1,69 @@
+/* ======================================
+=header
+====================================== */
+
+.siteheader {
+  --siteheader-padding: 42px;
+
+  padding-block-start: var(--siteheader-padding);
+
+  background-image: url(../../img/header-bkg-800.jpg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (width >= 700px) {
+    background-image: url(../../img/header-bkg-1024.jpg);
+  }
+
+  @media (width >= 1024px) {
+    background-image: url(../../img/header-bkg-1500.jpg);
+  }
+
+  @media (width >= 1500px) {
+    background-image: url(../../img/header-bkg-1920.jpg);
+  }
+}
+
+.siteheader-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  @media (width >= 700px) {
+    min-block-size: 660px;
+  }
+
+  @media (width >= 1024px) {
+    min-block-size: min(84vb, 660px);
+  }
+}
+
+.siteheader-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: 24px;
+
+  margin-block-end: 90px;
+
+  @media (width >= 700px) {
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  }
+}
+
+.siteheader-main {
+  align-self: end;
+}
+
+.siteheader-bottom {
+  justify-self: end;
+}
+
+.siteheader-social {
+  @media (width >= 700px) {
+    justify-self: end;
+  }
+}

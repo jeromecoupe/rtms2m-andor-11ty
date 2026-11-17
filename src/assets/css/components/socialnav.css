@@ -1,0 +1,32 @@
+/* ======================================
+=socialnav
+====================================== */
+
+.socialnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 3px;
+}
+
+.socialnav-link {
+  padding: 10px;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+
+  transition: border-color 0.2s ease-out;
+
+  &:hover {
+    border-color: var(--color-accent-light);
+  }
+}
+
+.socialnav-link img {
+  display: block;
+}

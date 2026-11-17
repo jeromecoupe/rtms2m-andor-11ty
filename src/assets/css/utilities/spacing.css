@@ -1,0 +1,45 @@
+/* ======================================
+=spacing
+====================================== */
+
+/* ======================================
+=margin
+====================================== */
+
+/* none */
+.mbs-none {
+  margin-block-start: 0;
+}
+
+.mbe-none {
+  margin-block-end: 0;
+}
+
+.mis-none {
+  margin-inline-start: 0;
+}
+
+.mie-none {
+  margin-inline-end: 0;
+}
+
+/* ======================================
+=padding
+====================================== */
+
+/* none */
+.pbs-none {
+  padding-block-start: 0;
+}
+
+.pbe-none {
+  padding-block-end: 0;
+}
+
+.pis-none {
+  padding-inline-start: 0;
+}
+
+.pie-none {
+  padding-inline-end: 0;
+}

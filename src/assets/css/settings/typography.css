@@ -1,0 +1,20 @@
+/* ======================================
+=typography
+====================================== */
+
+:root {
+  --fontstack-main: "Source Serif", "Georgia", serif;
+  --fontstack-alt: "Mona", system-ui, sans-serif;
+
+  /* https://www.modularscale.com/?18,16&px&1.25 */
+
+  --fontsize-xs: calc(13/16 * 1rem);
+  --fontsize-sm: calc(14/16 * 1rem);
+  --fontsize-base: clamp(1rem, 0.882rem + 0.27vi, 18 / 16 * 1rem);
+  --fontsize-lg: clamp(18 / 16 * 1rem, 1.06rem + 0.297vi, 20 / 16 * 1rem);
+
+  --fontsize-title1: clamp(25 / 16 * 1rem, 1.465rem + 0.445vi, 28 / 16 * 1rem);
+  --fontsize-title2: clamp(23 / 16 * 1rem, 1.373rem + 0.297vi, 25 / 16 * 1rem);
+  --fontsize-title3: clamp(20 / 16 * 1rem, 1.153rem + 0.445vi, 23 / 16 * 1rem);
+  --fontsize-title4: clamp(18 / 16 * 1rem, 1.06rem + 0.297vi, 20 / 16 * 1rem);
+}

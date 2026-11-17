@@ -1,0 +1,65 @@
+/* ======================================
+=diptych
+====================================== */
+
+.diptych {
+  --diptych-gap: 24px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "a"
+    "b";
+  gap: var(--diptych-gap);
+
+  @media (width >= 700px) {
+    --diptych-gap: 60px;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "a b";
+  }
+
+  @media (width >= 1024px) {
+    --diptych-gap: 18px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-areas: "a a a a a . b b b b b .";
+  }
+}
+
+.diptych-media {
+  overflow: clip;
+  border-radius: var(--radius-base);
+  grid-area: a;
+}
+
+.diptych-text {
+  grid-area: b;
+}
+
+.diptych-suptitle {
+  font-weight: 500;
+  font-size: var(--fontsize-sm);
+  font-family: var(--fontstack-alt);
+  color: var(--color-accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06ch;
+  margin-block-end: 3px;
+}
+
+/* ======================================
+=diptych reverse
+====================================== */
+
+.diptych-reverse {
+  @media (width >= 700px) {
+    grid-template-areas: "b a";
+  }
+
+  @media (width >= 1024px) {
+    grid-template-areas: ". b b b b b . a a a a a";
+  }
+}
+
+.diptych-center .diptych-text {
+  align-self: center;
+}

@@ -1,0 +1,16 @@
+/* ======================================
+=wrapper
+====================================== */
+
+.wrapper {
+  --wrapper-padding: clamp(18px, 5vi, 30px);
+  --wrapper-max-size: 1500px;
+
+  margin: 0 auto;
+  max-inline-size: var(--wrapper-max-size);
+  padding-inline: var(--wrapper-padding);
+}
+
+.wrapper-medium {
+  --wrapper-max-size: 1024px;
+}

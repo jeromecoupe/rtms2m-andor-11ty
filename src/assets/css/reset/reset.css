@@ -1,0 +1,36 @@
+/* ======================================
+=transitions
+====================================== */
+
+/* lets you animate or transition between a fixed size and a size keyword like "auto"  */
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+/* ======================================
+=kill block start margins
+====================================== */
+
+*,
+*::before,
+*::after {
+  margin-block-start: 0;
+}
+
+/* ======================================
+=typography
+====================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}

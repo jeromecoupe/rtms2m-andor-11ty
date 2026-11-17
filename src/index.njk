@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Testing this shit</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="module" src="/assets/js/main.js"></script>
+  </head>
+  <body>
+    <p>I am not a Vocaloïd (yet)</p>
+    <p>{{ 40 + 2 }} is the answer to {{ "everything"|upper }}</p>
+
+    {% set fruits = ["orange", "lemon", "apple", "pear"] %}
+
+    {% for item in fruits %}
+      <p>{{ item }}</p>
+    {% endfor %}
+    
+  </body>
+</html>

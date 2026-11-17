@@ -1,0 +1,32 @@
+/* ======================================
+=trailer
+====================================== */
+
+.trailer {
+  margin: 0;
+}
+
+.trailer-caption {
+  margin-block-start: 1em;
+  text-align: end;
+
+  font-size: var(--fontsize-sm);
+  color: var(--color-txt-secondary);
+
+  @media (width >= 1024px) {
+    margin-inline-start: 33%;
+  }
+
+  @media (width >= 1440px) {
+    margin-inline-start: 50%;
+  }
+}
+
+.trailer-caption p {
+  text-wrap: balance;
+}
+
+.trailer-caption strong {
+  font-weight: 500;
+  color: var(--color-txt-primary);
+}

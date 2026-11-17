@@ -1,0 +1,9 @@
+/* ======================================
+=intro
+====================================== */
+
+.intro {
+  font-weight: 450;
+  font-size: var(--fontsize-lg);
+  max-inline-size: 70ch;
+}

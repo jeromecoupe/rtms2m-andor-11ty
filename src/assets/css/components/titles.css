@@ -1,0 +1,31 @@
+/* ======================================
+=titles
+====================================== */
+
+.title1,
+.title2,
+.title3,
+.title4 {
+  font-weight: 800;
+  line-height: 1.2;
+  font-family: var(--fontstack-alt);
+  font-stretch: 125%;
+  text-transform: uppercase;
+  margin-block-end: 1em;
+}
+
+.title1 {
+  font-size: var(--fontsize-title1);
+}
+
+.title2 {
+  font-size: var(--fontsize-title2);
+}
+
+.title3 {
+  font-size: var(--fontsize-title3);
+}
+
+.title4 {
+  font-size: var(--fontsize-title4);
+}

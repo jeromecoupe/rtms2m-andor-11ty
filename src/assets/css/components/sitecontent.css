@@ -1,0 +1,9 @@
+/* ======================================
+=sitecontent
+====================================== */
+
+.sitecontent {
+  --content-padding: clamp(30px, 6vi, 75px);
+
+  padding-block: var(--content-padding);
+}
