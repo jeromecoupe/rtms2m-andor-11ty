@@ -22,6 +22,7 @@
   "browserslist": ">= 0.5% and not dead",
   "main": "index.js",
   "scripts": {
+    "clear": "rimraf \"./dist\"",
     "eleventy": "npx @11ty/eleventy --quiet",
     "serve": "npx @11ty/eleventy --serve",
     "css:dev": "lightningcss --bundle \"./src/assets/css/styles.css\" -o \"./dist/assets/css/styles.css\"",
@@ -30,7 +31,7 @@
     "js:prod": "npm run js:dev -- --minify",
     "watch:css": "onchange \"./src/assets/css/**/*.css\" -- npm run css:dev",
     "watch:js": "onchange \"./src/assets/js/**/*.js\" -- npm run js:dev",
-    "build": "concurrently \"npm run eleventy\" \"npm run css:prod\" \"npm run js:prod\"",
+    "build": "npm run clear && concurrently \"npm run eleventy\" \"npm run css:prod\" \"npm run js:prod\"",
     "dev": "concurrently \"npm run serve\" \"npm run watch:css\" \"npm run watch:js\""
   },
   "devDependencies": {
@@ -38,7 +39,8 @@
     "concurrently": "^10.0.7",
     "esbuild": "^0.28.2",
     "lightningcss-cli": "^1.33.0",
-    "onchange": "^7.1.0"
+    "onchange": "^7.1.0",
+    "rimraf": "^6.1.4"
   },
   "allowScripts": {
     "fsevents@2.3.3": true,
