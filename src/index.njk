@@ -5,19 +5,651 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Testing this shit</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <script type="module" src="/assets/js/main.js"></script>
+    <title>Andor fan site - Star Wars and fascism</title>
+    <meta
+      name="description"
+      content="Andor fan site" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Andor fan site - Star Wars and fascism" />
+    <meta
+      property="og:description"
+      content="Andor fan site" />
+    <meta
+      property="og:image"
+      content="assets/img/socialmedia.jpg" />
+    <meta
+      property="og:url"
+      content="" />
+    <meta
+      property="og:type"
+      content="website" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/styles.css" />
+
+    <!-- Preload fonts -->
+    <link
+      rel="preload"
+      href="assets/fonts/mona-sans-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      href="assets/fonts/source-serif-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      href="assets/fonts/source-serif-italic-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
   </head>
   <body>
-    <p>I am not a Vocaloïd (yet)</p>
-    <p>{{ 40 + 2 }} is the answer to {{ "everything"|upper }}</p>
+    <header class="siteheader">
+      <div class="wrapper">
+        <div class="siteheader-content">
+          <div class="siteheader-top">
+            <div class="siteheader-logo">
+              <img
+                class="logo"
+                src="assets/img/logo.svg"
+                width="120"
+                height="45"
+                alt="Andor - Star Wars" />
+            </div>
+            <div class="siteheader-mainnav">
+              <nav>
+                <ul class="mainnav">
+                  <li class="mainnav-item">
+                    <a
+                      class="mainnav-link"
+                      href="#introduction">
+                      Introduction
+                    </a>
+                  </li>
+                  <li class="mainnav-item">
+                    <a
+                      class="mainnav-link"
+                      href="#trailer">
+                      Trailer
+                    </a>
+                  </li>
+                  <li class="mainnav-item">
+                    <a
+                      class="mainnav-link"
+                      href="#characters">
+                      Characters
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="siteheader-social">
+              <nav>
+                <ul class="socialnav">
+                  <li class="socialnav-item">
+                    <a
+                      href="#"
+                      class="socialnav-link">
+                      <img
+                        src="assets/img/icon-instagram.svg"
+                        width="18"
+                        height="18"
+                        alt="Instagram" />
+                    </a>
+                  </li>
+                  <li class="socialnav-item">
+                    <a
+                      href="#"
+                      class="socialnav-link">
+                      <img
+                        src="assets/img/icon-facebook.svg"
+                        width="18"
+                        height="18"
+                        alt="Facebook" />
+                    </a>
+                  </li>
+                  <li class="socialnav-item">
+                    <a
+                      class="socialnav-link"
+                      href="#">
+                      <img
+                        src="assets/img/icon-youtube.svg"
+                        width="18"
+                        height="18"
+                        alt="Youtube" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="siteheader-main">
+            <hgroup>
+              <p class="suptitle">Star Wars and fascism</p>
+              <h1 class="bigtitle">
+                <span class="bigtitle-fat">Revolutions</span>
+                <span class="bigtitle-thin">are built on hope</span>
+              </h1>
+            </hgroup>
+          </div>
+          <div class="siteheader-bottom">
+            <p class="mbe-none">
+              <a
+                class="watchbutton"
+                href="#">
+                <span
+                  class="watchbutton-icon"
+                  aria-hidden="true">
+                  <img
+                    src="assets/img/icon-arrow.svg"
+                    width="16"
+                    height="12"
+                    alt="" />
+                </span>
+                <span class="watchbutton-text">Watch on Disney+</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="sitecontent">
+      <div class="section">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Introduction</h2>
 
-    {% set fruits = ["orange", "lemon", "apple", "pear"] %}
+          {% for item in characters %}
+            <p>{{ item.name }}</p>
+          {% endfor %}
 
-    {% for item in fruits %}
-      <p>{{ item }}</p>
-    {% endfor %}
-    
+          <div class="intro">
+            <p>
+              Through the evolution of Cassian Andor from petty thief to
+              revolutionary leader, the series depicts the struggles, victories
+              and defeats of a revolution against an authoritarian regime of
+              random deportations, constant military presence and mass
+              surveillance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="wrapper">
+          <h2 class="title3">Watch trailer</h2>
+          <figure class="trailer">
+            <video
+              class="fluidvideo"
+              src="assets/videos/andor-trailer.mp4"
+              poster="assets/img/poster-trailer.jpg"
+              controls>
+              <p><a href="">Download the video trailer (mp4)</a></p>
+            </video>
+            <figcaption class="trailer-caption">
+              <p>
+                Andor is a science fiction television series created by
+                <strong>Tony Gilroy</strong> for Disney+ as a
+                <strong>prequel to Rogue One</strong>, released in 2016.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="section">
+        <div class="wrapper wrapper-medium">
+          <h2 class="visually-hidden">Famous quote</h2>
+          <figure class="quote">
+            <blockquote class="quote-text">
+              <p>
+                I'd rather die trying to take them down, than die giving them
+                what they want.
+              </p>
+            </blockquote>
+            <figcaption>
+              <p class="quote-author">Cassian Andor</p>
+              <p class="quote-origin">S1E10 - One way Out</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="section">
+        <div class="wrapper">
+          <div class="diptych diptych-center">
+            <div class="diptych-media">
+              <img
+                src="assets/img/dyptichs/season-one.jpg"
+                class="fluidimg"
+                alt="Cassian Andor and Kino Loy each holding a and wearing the white uniforms of the Narkina 5 prison."
+                width="1024"
+                height="1024"
+                decoding="async"
+                loading="lazy" />
+            </div>
+            <div class="diptych-text">
+              <p class="diptych-suptitle">Andor Season 1</p>
+              <h2 class="title2">Birth of a Leader</h2>
+              <p>
+                Cassian Andor is a cynical survivor who gets pulled into a
+                growing rebellion, forcing him to choose between staying safe
+                and fighting the Empire.
+              </p>
+              <p>
+                After a deadly encounter with Imperial officers, Cassian is
+                recruited by rebel operative Luthen Rael for a daring heist. As
+                the Empire tightens its grip, Cassian faces an Imperial prison.
+                His journey turns personal survival into resistance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="wrapper">
+          <div class="diptych diptych-center diptych-reverse">
+            <div class="diptych-media">
+              <img
+                src="assets/img/dyptichs/season-two.jpg"
+                class="fluidimg"
+                alt="Cassian Andor exfiltrating Senator Mon Mothma from the Senate. They both look straight ahead, focused on the exit."
+                width="1024"
+                height="1024"
+                decoding="async"
+                loading="lazy" />
+            </div>
+            <div class="diptych-text">
+              <p class="diptych-suptitle">Andor Season 2</p>
+              <h2 class="title2">Road to Rebellion</h2>
+              <p>
+                Cassian Andor becomes a key rebel operative while the rebellion
+                evolves into a movement powerful and resourceful enough to
+                challenge the Empire.
+              </p>
+              <p>
+                The resistance against the Empire grows stronger: political
+                leaders risk their careers for the rebellion and, when the
+                Empire brutally massacre the population of a planet for its
+                resources, the rebellion enters a whole new phase.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="wrapper">
+          <h2 class="title3">Favourite characters</h2>
+          <ul class="grid grid-2cols-sm grid-3cols-md grid-4cols-lg">
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Cassian_Jeron_Andor">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/cassian-andor.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Cassian Andor</h3>
+                    <p class="character-cast">Diego Luna</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Mon_Mothma">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/mon-mothma.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Mon Mothma</h3>
+                    <p class="character-cast">Genevieve O'Reilly</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Kleya_Marki">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/kleya-marki.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Kleya Marki</h3>
+                    <p class="character-cast">Elizabeth Dulau</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Luthen_Rael">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/luthen-rael.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Luthen Rael</h3>
+                    <p class="character-cast">Stellan Skarsgård</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Dedra_Meero">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/dedra-meero.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Dedra Meero</h3>
+                    <p class="character-cast">Denise Gough</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Lio_Partagaz">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/lio-partagaz.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Lio Partagaz</h3>
+                    <p class="character-cast">Anton Lesser</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Syril_Karn">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/syril-karn.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Syril Karn</h3>
+                    <p class="character-cast">Kyle Soller</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/K-2SO">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/k-2so.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">K-2SO</h3>
+                    <p class="character-cast">Alan Tudyk</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Bix_Caleen">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/bix-caleen.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Bix Caleen</h3>
+                    <p class="character-cast">Adria Arjona</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Orson_Callan_Krennic">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/orson-krennic.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Orson Krennic</h3>
+                    <p class="character-cast">Ben Mendelsohn</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/Maarva_Carassi_Andor">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/maarva-andor.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Maarva Andor</h3>
+                    <p class="character-cast">Fiona Shaw</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article class="character">
+                <a
+                  class="character-link"
+                  href="https://starwars.fandom.com/wiki/K-2SO">
+                  <div class="character-media">
+                    <img
+                      src="assets/img/characters/saw-gerrera.jpg"
+                      class="character-img fluidimg"
+                      alt=""
+                      width="600"
+                      height="600"
+                      loading="lazy"
+                      decosing="async" />
+                  </div>
+                  <div class="character-info">
+                    <h3 class="character-name">Saw Gerrera</h3>
+                    <p class="character-cast">Forest Whitaker</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="wrapper">
+          <div class="diptych">
+            <div class="diptych-media">
+              <img
+                src="assets/img/dyptichs/questions-answers.jpg"
+                class="fluidimg"
+                alt="Close up on Cassion Andor, looking at us sideways."
+                decoding="async"
+                loading="lazy" />
+            </div>
+            <div class="diptych-text">
+              <p class="diptych-suptitle">Star Wars trivia</p>
+              <h2 class="title2">Andor Q&amp;A</h2>
+              <div class="accordion">
+                <details
+                  class="accordion-item"
+                  name="questions-answers"
+                  open>
+                  <summary class="accordion-title">
+                    How were most Andor scenes shot ?
+                  </summary>
+                  <div class="accordion-content">
+                    <p>
+                      Andor establishes each scene in the series by giving
+                      priority to the real elements. While other Star Wars shows
+                      start with a wide shot making heavy use of CGI, Andor
+                      focuses on tangible elements and makes use of vast sets
+                      built in the real world.
+                    </p>
+                  </div>
+                </details>
+                <details
+                  class="accordion-item"
+                  name="questions-answers">
+                  <summary class="accordion-title">
+                    What is Andor's timeline ?
+                  </summary>
+                  <div class="accordion-content">
+                    <p>
+                      The events in Andor (apart from the flashbacks on Kenari)
+                      happen in the five years before Rogue One. They describe
+                      the journey of Cassion Andor to becoming a ruthless
+                      rebellion operative. The first season documents the first
+                      year of that journey, while each three episodes arc of
+                      season two covers roughly one year.
+                    </p>
+                  </div>
+                </details>
+                <details
+                  class="accordion-item"
+                  name="questions-answers">
+                  <summary class="accordion-title">
+                    How well was Andor recieved ?
+                  </summary>
+                  <div class="accordion-content">
+                    <p>
+                      Both seasons of Andor were very well recieved. Critics and
+                      viewers hailed its mature and political take on the Star
+                      Wars universe. The first season was considered one the
+                      best series of 2022, while its second season climed to the
+                      top of the charts in 2025.
+                    </p>
+                  </div>
+                </details>
+                <details
+                  class="accordion-item"
+                  name="questions-answers">
+                  <summary class="accordion-title">
+                    What is the show's main theme ?
+                  </summary>
+                  <div class="accordion-content">
+                    <p>
+                      Gilroy wanted to propose a gritty view of what it takes to
+                      organize a rebellion against a tyrannical government set
+                      on centralizing control and normalizing mass surveillance.
+                      Instead of Jedis, lightsabers and the force, Andor focuses
+                      on the choices ordinary people are forced to make when
+                      confronted with fascism and authoritarism.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="sitefooter">
+      <div class="wrapper">
+        <div class="sitefooter-content">
+          <p class="copyright">
+            La Casa production, 2026. All images and videos are the property of
+            Disney+ and the Star Wars franchise.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
