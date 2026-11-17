@@ -7,21 +7,22 @@
 
   padding-block-start: var(--siteheader-padding);
 
-  background-image: url(../../img/header-bkg-800.jpg);
+  background-color: black;
+  background-image: url(../img/header-bkg-800.jpg);
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (width >= 700px) {
-    background-image: url(../../img/header-bkg-1024.jpg);
+    background-image: url(../img/header-bkg-1024.jpg);
   }
 
   @media (width >= 1024px) {
-    background-image: url(../../img/header-bkg-1500.jpg);
+    background-image: url(../img/header-bkg-1500.jpg);
   }
 
   @media (width >= 1500px) {
-    background-image: url(../../img/header-bkg-1920.jpg);
+    background-image: url(../img/header-bkg-1920.jpg);
   }
 }
 

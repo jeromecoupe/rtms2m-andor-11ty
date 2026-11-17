@@ -8,5 +8,4 @@ body {
   background-color: var(--color-bkg-primary);
   color: var(--color-txt-primary);
   font-size: var(--fontsize-base);
-  background-color: lightgreen;
 }

@@ -20,9 +20,12 @@
   overflow: clip;
   height: 0;
 
-  transition-property: height, content-visibility;
-  transition-duration: var(--accordion-transition-duration);
-  transition-behavior: allow-discrete;
+  /* we transition from height 0 to height auto > we need interpolate-size: allow-keywords to be activated on the :root element (see reset.css) */
+  @supports (interpolate-size: allow-keywords) {
+    transition-property: height, content-visibility;
+    transition-duration: var(--accordion-transition-duration);
+    transition-behavior: allow-discrete;
+  }
 }
 
 .accordion-item[open]::details-content {
@@ -47,7 +50,7 @@
   content: "";
   inline-size: var(--accordion-icon-size);
   block-size: var(--accordion-icon-size);
-  background-image: url(../../img/icon-accordion-more.svg);
+  background-image: url(../img/icon-accordion-more.svg);
   background-size: cover;
 
   transition: rotate var(--accordion-transition-duration) ease-out;

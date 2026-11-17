@@ -30,7 +30,7 @@
   content: "";
   inline-size: var(--iconsize);
   block-size: var(--iconsize);
-  background: var(--color-accent-main) url(../../img/icon-more.svg) 50% 50%
+  background: var(--color-accent-main) url(../img/icon-more.svg) 50% 50%
     no-repeat;
   border-radius: var(--radius-base);
 
